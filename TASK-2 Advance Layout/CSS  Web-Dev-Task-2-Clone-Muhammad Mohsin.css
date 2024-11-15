@@ -1,0 +1,469 @@
+/* Web-Dev-task-2- Muhammad Mohsin /CSS Web-Dev-Task-2-Clone-Muhammad Mohsin.css */
+/* Created by: Muhammad Mohsin */
+/* Course: Creative Computing */
+/* Year 2-Level 5-Group 2 */
+/* Setting styles for the whole page */
+/*  Web-Dev-2-task-2 */
+
+/*  Styling for images */
+img {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    min-width: 100%;    /*  Ensures the image takes up the full width  */
+    min-height: 100%;   /*  Ensures the image takes up the full height */
+    object-fit: cover;  /*  Object-fit: cover to cover the entire container */
+    
+  }
+  /*    Styling for the whole page */
+  * {
+    padding: 0; /* Removes the default padding */
+    margin: 0;  /* Removes the default margin */
+  }
+  /*    Styling for the body*/
+  body {
+    font-family: "Lato", sans-serif;    /*  Choosing a clean, sans-serif font for readability */
+      background-color: #ffffff;    /*  Light grey background for a soft look */
+      color: #231651;   /*  Setting text color to #231651 */
+    font-size: 16px;    /*  Standard font size for general text */
+      
+  }
+  /*    Styling for buttons*/
+  button {
+    font-family: "Teko", sans-serif;    /*  Choosing a bold, unique font for headings */
+    font-size: 4em;    /*  Large font size for the main title */
+    background-color: #ffffff;    /*  White background for buttons */
+    color: #4DCCBD; /*  Setting text color to #4DCCBD */
+    padding: 16px;    /*  Adding padding to the button */
+    border-radius: 16px;    /*  Adding border radius to the button */
+    border: none;    /*  Removing the default border */
+  }
+  /*    Styling for the search button*/
+  .search-button button {
+    padding: 10px 20px; /*  Adding padding for spacing */
+    border-radius: 8px; /*  Adding border radius for rounded corners */
+    border: none;   /*  Removing the default border */
+    cursor: pointer;    /*  Adding a pointer cursor on hover */
+    font-family: "Teko", sans-serif;    /*  Choosing a bold, unique font for headings */
+    font-size: 2em;    /*  Large font size for the main title */
+    background-color: #4DCCBD;  /*  Setting background color to #4DCCBD */
+    color: #ffffff; /*  Setting text color to #ffffff */
+  }
+
+/*  Styling for the navigation bar*/  
+  .navigation-bar {
+    display: flex;  /*  Using flexbox to create a flex container */
+    flex-direction: row;    /*  Setting flex direction to row */
+    gap: 16px;  /*  Setting gap between navigation links */
+    box-shadow: 0 16px 48px 0px #4DCCBD;    /*  Adding a box shadow for depth */
+    align-content: center;  /*  Aligning content to the center */
+    align-items: center;    /*  Aligning items to the center */
+    max-width: 100%;    /*  Setting maximum width to 100% */
+    padding-top: 10px;  /*  Adding padding to the top */
+    padding-bottom: 10px;   /*  Adding padding to the bottom */
+    padding-inline: 16px;   /*  Adding padding to the left and right */
+    grid-row: 1 / 2;    /*  Setting grid row to 1 */
+    background-color: #ffffff;      /*  Setting background color to #ffffff */      
+    color: #4DCCBD; /*  Setting text color to #4DCCBD */
+    border: 2px 5px solid #4DCCBD;  /*  Adding a border to the navigation bar */
+  }
+  /*    Styling for the logo*/
+  #logo {
+    font-family: "Teko", sans-serif;    /*  Choosing a bold, unique font for headings */
+    font-size: 3em;     /*  Large font size for the main title */
+    color: #4DCCBD; /*  Setting text color to #4DCCBD */
+    font-weight: 800;   /*  Setting font weight to 800 */
+  }
+  /*    Styling for the movie categories*/
+  .movie-categories-nav-bar {
+    flex-grow: 2.5;    /*  Setting flex-grow to 2.5 */
+    justify-content: center;    /*  Justifying content to the center */
+    gap: 48px;  /*  Setting gap between navigation links */
+    position: relative; /*  Setting position to relative */
+    top: -10%;  /*  Setting top position to -10% */
+    display: flex;      /*  Using flexbox to create a flex container */
+    flex-direction: row;    /*  Setting flex direction to row */
+    
+  }
+  /*    Styling for the movie categories*/
+  #About {
+    padding-right: 16px;    /*  Adding padding to the right */
+    padding-left: 16px; /*  Adding padding to the left */
+    text-align: center; /*  Aligning text to the center */
+    font-weight: bold;  /*  Setting font weight to bold */
+    font-size: 1em; /*  Setting font size to 1em */
+    grid-column: 1/2;    /*  Setting grid column to 1/2 */
+    
+  }
+  /*    Styling for the movie categories*/
+  #Comedy {
+    padding-left: 16px;    /*  Adding padding to the left */
+    text-align: center; /*  Aligning text to the center */
+    font-weight: bold;  /*  Setting font weight to bold */
+    font-size: 1em; /*  Setting font size to 1em */
+    grid-column: 2/3;    /*  Setting grid column to 2/3 */
+    padding-right: 16px;    /*  Adding padding to the right */
+    
+  }
+  /*    Styling for the movie categories*/
+  #Romance {
+    padding-right: 16px;    /*  Adding padding to the right */
+    padding-left: 16px;    /*  Adding padding to the left */
+    text-align: center; /*  Aligning text to the center */
+    font-weight: bold;  /*  Setting font weight to bold */
+    font-size: 1em; /*  Setting font size to 1em */
+    grid-column: 3/4;    /*  Setting grid column to 3/4 */
+    
+  }
+/*    Styling for the movie categories*/
+  #Drama {
+    padding-right: 16px;    /*  Adding padding to the right */
+    padding-left: 16px;    /*  Adding padding to the left */
+    text-align: center; /*  Aligning text to the center */
+    font-weight: bold;  /*  Setting font weight to bold */
+    font-size: 1em; /*  Setting font size to 1em */
+    grid-column: 4/5;    /*  Setting grid column to 4/5 */
+    
+  }
+  
+  
+  /*    Styling for the main content*/
+  .the-maincontent {
+    margin-top: 48px;    /*  Adding margin to the top */
+    grid-row: 2/4;    /*  Setting grid row to 2/4 */
+    max-width: 900px;   /*  Setting max-width to 900px */
+    align-items: center;    /*  Aligning items to the center */    
+    margin-left: auto;      /*  Adding margin to the left */
+    margin-right: auto;     /*  Adding margin to the right */
+    display: grid;       /*  Using grid to create a grid container */
+    grid-template-rows: 450px 800px 450px 450px 450px 10px; /*  Setting grid template rows */
+    grid-template-columns: repeat(2,1fr);    /*  Setting grid template columns */
+    row-gap: 48px;  /*  Setting row gap */
+    column-gap: 48px;   /*  Setting column gap */
+    padding-inline: 48px;    /*  Adding padding to the inline */
+  }
+  /*    Styling for the fonts*/  
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap');
+  /*    Styling for the fonts*/
+    .lato-regular {
+      font-weight: 400; /*  Setting font weight to 400 */
+      font-style: normal;   /*  Setting font style to normal */
+      font-family: "Lato", sans-serif;    /*  Choosing a clean, sans-serif font for readability */
+  }
+  /*    Styling for the fonts*/
+  .teko-regular {
+    font-weight: 300;   /*  Setting font weight to 300 */
+    font-style: normal; /*  Setting font style to normal */
+    font-family: "Teko", sans-serif;    /*  Choosing a bold, unique font for headings */
+    font-optical-sizing: auto;      /*  Setting font optical sizing to auto */
+  }
+  /*    Styling for the info section    */
+  .info1, .info2, .info3, .info4, .info5, .info6 {
+    text-align: left;   /*  Aligning text to the left */
+    padding-inline: 16px;   /*  Adding padding to the inline */
+    align-self:first baseline;  /*  Aligning self to the first baseline */
+    grid-area: info;    /*  Setting grid area to info */
+    font-size: 1.5em;   /*  Setting font size to 1.5em */
+  }
+  /*    Styling for the info section    */
+  .info1, .info4, .info5, .info6 {  
+    margin-top: 16px;   /*  Adding margin to the top */
+  }
+  /*    Styling for the movie posters   */
+  .movie-poster-A, .movie-poster-B, .movie-poster-C, .movie-poster-D, .movie-poster-E, .movie-poster-F {
+    box-shadow: 16px 16px 16px #b3b2b2; /*  Adding a shadow to the movie posters */
+    border: 1px solid #4DCCBD;  /*  Adding a border to the movie posters */
+    text-align: center; /*  Aligning text to the center */
+    align-items: center;    /*  Aligning items to the center */
+    height: 450px;      /*  Setting height to 450px */
+    font-size: 1em; /*  Setting font size to 1em */
+    display: grid;  /*  Using grid to create a grid container */
+    background: #4DCCBD;    /*  Setting background color to #4DCCBD */
+    
+  }
+  /*    Styling for the movie posters   */
+  .movie-poster-A, .movie-poster-D, .movie-poster-E, .movie-poster-F {
+    grid-column: 1/3;   /*  Setting grid column to 1/3 */
+  }
+  /*    Styling for the movie posters   */
+  #button2, #button3, #button4, #button5, #button6 {
+    margin: 16px;   /*  Adding margin */
+  }
+  /*    Styling for the movie posters   */
+  #button1, #button2, #button3, #button4, #button5, #button6 {
+    background-color: #ffffff;   /*  Setting background color to #ffffff */
+    color: #4DCCBD; /*  Setting color to #4DCCBD */
+    font-size: 2em; /*  Setting font size to 2em */
+    font-weight: 400;   /*  Setting font weight to 400 */
+    grid-area: button;      /*  Setting grid area to button */
+   
+  }
+  
+  /*    Styling for the movie posters   */
+  .movie-poster-A {
+    align-items: start; /*  Aligning items to the start */
+    justify-content: center;    /*  Justifying content to the center */
+    align-content: space-between;   /*  Aligning content to the space between */
+    height: fit-content;    /*  Setting height to fit content */
+    grid-template-rows: 1fr 16px 1fr;   /*  Setting grid template rows to 1fr 16px 1fr */
+    grid-template-columns: repeat(3, 1fr);  /*  Setting grid template columns to repeat 3, 1fr */
+    grid-template-areas:    /*  Setting grid template areas*/
+        "image image image" 
+        ". . button"
+        "info info button";
+    display: grid;  /*  Using grid to create a grid container */
+  }
+  /*    Styling for the movie posters   */
+  .movie-poster-img1, .movie-poster-img2, .movie-poster-img3, .movie-poster-img4, .movie-poster-img5, .movie-poster-img6 {
+    grid-area: image;   /*  Setting grid area to image */
+    display: flex;          /*  Using flex to create a flex container */
+    justify-content: center;    /*  Justifying content to the center */
+    align-items: center;    /*  Aligning items to the center */
+    overflow: hidden;   /*  Overflow: hidden to hide any content that overflows the container */
+    width: 100%;    /*  Setting width to 100% */
+    height: 100%;   /*  Setting height to 100% */
+    object-fit: fill;   /*  Object-fit: fill to fill the entire container */
+  }
+  /*    Styling for the movie posters   */
+  #button1 {
+    object-fit: cover;  /*  Object-fit: cover to cover the entire container */
+    padding: 1.75em;    /*  Adding padding */
+    width: 75%; /*  Setting width to 75% */
+    justify-self: right;    /*  Justifying self to the right */
+    margin-right: 16px; /*  Adding margin */
+    margin-bottom: 16px;    /*  Adding margin */
+    margin-top: 16px;       /*  Adding margin */
+    font-size: 2em;  /*  Setting font size to 2em */
+  }
+  /*    Styling for the movie posters   */
+  .movie-poster-img1 img {
+    height: 220px;  /*  Setting height to 220px */
+  }
+  /*    Styling for the movie posters   */
+  .info1 {
+    width: 100%;    /*  Setting width to 100% */
+  }
+  
+  /*    Styling for the movie posters   */
+  .movie-poster-B, .movie-poster-C {
+    height: 800px;  /*  Setting height to 800px */
+    align-items: end;   /*  Aligning items to the end */
+    justify-content: center;    /*  Justifying content to the center */
+    align-content: center;  /*  Aligning content to the center */
+    display: grid;   /*  Using grid to create a grid container */
+      grid-template-rows: 200px 200px 250px 150px;  /*  Setting grid template rows to 200px 200px 250px 150px */
+      grid-template-columns: none;    /*  Setting grid template columns to none */
+      grid-template-areas:  /*  Setting grid template areas*/
+          "image"
+          "image"
+          "info"
+          "button"; /*  Setting grid template areas*/
+     
+  }
+  
+  
+  /*    Styling for the movie posters   */
+  .movie-poster-D, .movie-poster-E, .movie-poster-F {
+    display: grid;  /*  Using grid to create a grid container */
+    align-content: center;  /*  Aligning content to the center */
+    align-items: end;   /*  Aligning items to the end */
+    grid-template-columns: repeat(4, 1fr);  /*  Setting grid template columns to repeat 4, 1fr */
+    grid-template-rows: repeat(2, 1fr);  /*  Setting grid template rows to repeat 2, 1fr */
+    grid-template-areas:    /*  Setting grid template areas*/
+        "image image info info"
+        "image image button button";
+  }
+  /*    Styling for the movie posters   */
+  .info2, .info3 {
+    padding-top: 16px;  /*  Adding top padding */
+  } 
+  /*    Styling for the movie posters image   */
+  .movie-poster-img4 img, .movie-poster-img5 img, .movie-poster-img6 img {
+    height: 450px;  /*  Setting height to 450px */
+  }
+  /*    Styling for the movie posters image   */
+  .movie-poster-img2 img, .movie-poster-img3 img {
+    height: 400px;  /*  Setting height to 400px */
+  }
+  
+  
+  /*   media quiry for tablet, min-width: 720px and max-width: 1024px,  */
+  @media screen and (min-width: 720px) and (max-width: 1024px) {
+    /*  Styling for the main content  */
+    .the-maincontent {
+      column-gap: 32px; /*  Adding column gap */
+      padding-inline: 32px; /*  Adding inline padding */
+      margin-top: 32px; /*  Adding top margin */
+      max-width: 900px;   /*  Setting max-width to 900px */
+      padding-bottom: 32px; /*  Adding bottom padding */
+      grid-template-rows: repeat(3,950px);  /*  Setting grid template rows to repeat 3, 950px */
+      grid-template-columns: repeat(2,1fr); /*  Setting grid template columns to repeat 2, 1fr */
+      row-gap: 32px;    /*  Setting row gap */
+      
+    }
+    /*  Styling for the navigation bar  */
+    .navigation-bar {   
+      display: flex;    /*  Using flexbox to create a flex container */
+      flex-direction: row;    /*  Setting flex direction to row */
+      gap: 16px;    /*  Setting gap between navigation links */
+      box-shadow: 0 16px 48px 0px #4DCCBD;    /*  Adding a box shadow for depth */
+      align-content: center;    /*  Aligning content to the center */
+      align-items: center;    /*  Aligning items to the center */
+      max-width: 100%;    /*  Setting maximum width to 100% */
+      padding-top: 10px;    /*  Adding padding to the top */
+      padding-bottom: 10px;   /*  Adding padding to the bottom */
+      padding-inline: 16px;   /*  Adding padding to the left and right */
+      grid-row: 1 / 2;    /*  Setting grid row to 1/2 */
+      background-color: #ffffff;      /*  Setting background color to #ffffff */
+      color: #4DCCBD;   /*  Setting text color to #4DCCBD */
+    }
+    /*  Styling for the logo*/
+    #logo { 
+      font-size: 2em;   /*  Setting font size to 2em */
+    }
+    /*  Styling for the search button*/
+    .search-button button {
+      padding: 10px 20px;   /*  Adding padding for spacing */
+      border-radius: 8px;   /*  Adding border radius for rounded corners */
+      border: none; /*  Removing the default border */
+      cursor: pointer;  /*  Adding a pointer cursor on hover */
+      font-family: "Teko", sans-serif;  /*  Choosing a bold, unique font for headings */
+      font-size: 2em;   /*  Large font size for the main title */
+      background-color: #4DCCBD;    /*  Setting background color to #4DCCBD */
+      color: #ffffff;   /*  Setting text color to #ffffff */
+    }
+    /*  Styling for the movie posters*/
+    .movie-poster-E, .movie-poster-F {
+      grid-row: 3/4;    /*  Setting grid row to 3/4 */
+    }   
+    /*  Styling for the movie posters**/
+    .movie-poster-A, .movie-poster-C, .movie-poster-E {
+      grid-column: 1/2; /*  Setting grid column to 1/2 */
+    }
+  
+    /*  Styling for the movie posters*/
+    .movie-poster-B, .movie-poster-D, .movie-poster-F {
+      grid-column: 2/3; /*  Setting grid column to 2/3 */
+    }
+    /*  Styling for the movie posters*/
+    .movie-poster-A, .movie-poster-B {
+      grid-row: 1/2;    /*  Setting grid row to 1/2 */
+    }
+    /*  Styling for the movie posters*/
+    .movie-poster-C, .movie-poster-D {
+      grid-row: 2/3;    /*  Setting grid row to 2/3 */
+    }
+    /*  Styling for the movie posters*/
+    .movie-poster-A, .movie-poster-B, .movie-poster-C, .movie-poster-D, .movie-poster-E, .movie-poster-F {
+      grid-template-areas:  /*  Setting grid template areas*/
+      "image image" 
+      "image image"
+      "info info"
+      "button button"
+      "button button";  /*  Setting grid template areas*/
+      height: 950px;      /*  Setting height to 950px */
+      display: grid;      /*  Using grid to create a grid container */
+      grid-template-rows: 200px 200px 250px 150px 150px;    /*  Setting grid template rows to 200px 200px 250px 150px 150px */
+      grid-template-columns: 1fr 1fr;    /*  Setting grid template columns to 1fr 1fr */
+      align-items: end;   /*  Aligning items to the end */
+    }
+    /*  Styling for the movie posters*/
+    .movie-poster-img1 img, .movie-poster-img2 img, .movie-poster-img3 img, .movie-poster-img4 img, .movie-poster-img5 img, .movie-poster-img6 img {
+      height: 400px;    /*  Setting height to 400px */
+    }
+    /*  Styling for the movie posters*/
+    .info1, .info2, .info3, .info4, .info5, .info6 {
+      width: 90%;    /*  Setting width to 90% */
+      height: 70%;    /*  Setting height to 70% */
+      padding-top: 16px;    /*  Adding top padding */
+    }
+    /*  Styling for the movie posters*/
+    .info1, .info4, .info5, .info6 {    
+      margin-top: 0;    /*  Removing top margin */
+    }
+    /*  Styling for the movie posters*/
+    #button1, #button2, #button3, #button4, #button5, #button6 {
+      object-fit: cover;    /*  Object-fit: cover to cover the entire container */
+      padding: .4em;    /*  Adding padding */
+      justify-self: center;    /*  Justifying self to the center */
+      width: 95%;    /*  Setting width to 95% */
+      height: 60%;      /*  Setting height to 60% */
+      white-space: pre-line;    /*  White-space: pre-line to preserve line breaks */
+      padding-inline: 16px;    /*  Adding inline padding */ 
+      margin-right: 0;    /*  Removing right margin */
+      margin-left: 0;     /*  Removing left margin */
+     
+    }
+  }
+  
+  /*    media quiry for mobile, min-width: 360px and max-width: 720px,  */
+  @media screen and (min-width: 360px) and (max-width: 720px) {
+    /*  Styling for the main content  */
+    .the-maincontent {
+      column-gap: 0;    /*  Removing column gap */
+      padding-inline: 0;    /*  Removing inline padding */
+      margin-top: 0;    /*  Removing top margin */
+      max-width: 900px;          /*  Setting max-width to 900px */
+      padding-bottom: 16px; /*  Adding bottom padding */
+      box-shadow: 0 0px 0px 0px #4DCCBD;    /*  Adding a box shadow for depth */
+      padding-top: 16px;    /*  Adding top padding */
+      grid-template-rows: repeat(6,800px);  /*  Setting grid template rows to repeat 6, 800px */
+      grid-template-columns: auto;    /*  Setting grid template columns to auto */
+      row-gap: 16px;    /*  Setting row gap */
+    }
+    /*  Styling for the navigation bar  */
+    .navigation-bar { box-shadow: 0 0px 0px 0px #4DCCBD; }  /*  Adding a box shadow for depth */
+    /*  Styling for the movie categories*/
+    #About, #Comedy, #Romance, #Drama { display: none; }    /*  Hiding the movie categories */
+    /*  Styling for the logo*/
+    #logo {
+      font-size: 2em;    /*  Setting font size to 2em */
+    }
+    /*  Styling for the movie posters*/
+    .movie-poster-A { grid-row: 1/2;}   /*  Setting grid row to 1/2 */
+    .movie-poster-B { grid-row: 2/3;}   /*  Setting grid row to 2/3 */
+    .movie-poster-C { grid-row: 3/4;}   /*  Setting grid row to 3/4 */
+    .movie-poster-D { grid-row: 4/5;}   /*  Setting grid row to 4/5 */
+    .movie-poster-E { grid-row: 5/6;}   /*  Setting grid row to 5/6 */
+    /*  Styling for the movie posters*/
+    .movie-poster-A, .movie-poster-B, .movie-poster-C, .movie-poster-D, .movie-poster-E, .movie-poster-F {  /*  Styling for the movie posters*/
+    /*  Styling for the movie posters*/
+      grid-template-areas: /*   Setting grid template areas*/
+      "image image"
+      "image image"
+      "info info"
+      "button button"
+      "button button";
+      height: 800px;    /*  Setting height to 800px */
+      box-shadow: 0px 0px 0px 0px #4DCCBD;    /*  Adding a box shadow for depth */
+      grid-column: 1/2;  /*  Setting grid column to 1/2 */
+      display: grid;    /*  Using grid to create a grid container */
+      grid-template-rows: 200px 200px 200px 100px 100px;    /*  Setting grid template rows to 200px 200px 200px 100px 100px */
+      grid-template-columns: 1fr 1fr;    /*  Setting grid template columns to 1fr 1fr */
+    }
+    /*  Styling for the movie posters*/
+    .info1, .info2, .info3, .info4, .info5, .info6 {
+      width: 90%;    /*  Setting width to 90% */
+      height: 70%;    /*  Setting height to 70% */
+      padding-top: 16px;    /*  Adding top padding */
+    }
+    /*  Styling for the movie posters image*/
+    .movie-poster-img1 img, .movie-poster-img2 img, .movie-poster-img3 img, .movie-poster-img4 img, .movie-poster-img5 img, .movie-poster-img6 img {
+      height: 400px;    /*  Setting height to 400px */
+    }
+  
+    /*  Styling for the buttons*/
+    #button1, #button2, #button3, #button4, #button5, #button6 {
+      padding-inline: 0;    /*  Adding inline padding */
+      margin-right: 0;    /*  Removing right margin */
+      margin-left: 0;     /*  Removing left margin */
+      object-fit: cover;    /*  Object-fit: cover to cover the entire container */
+      padding: .4em;    /*  Adding padding */
+      width: 95%;    /*  Setting width to 95% */
+      height: 50%;      /*  Setting height to 50% */
+      white-space: none;    /*  White-space: pre-line to preserve line breaks */
+      justify-self: center;    /*  Justifying self to the center */
+    }
+    /*  Styling for the movie posters*/
+    .info1, .info4, .info5, .info6 {
+      margin-top: 0;    /*  Removing top margin */
+    }
+  }

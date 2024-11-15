@@ -1,0 +1,84 @@
+/*  Gridlayout,  muhammad mohsin,    Class activity, web dev2, cc l5 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+
+  .PageContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .PageHeader {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .PageHeader h1 {
+    font-size: 36px;
+    color: #333;
+  }
+
+  .PageHeader p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+  }
+
+  .PGContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .PGItem {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .PGItem img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .PGItem:hover img {
+    transform: scale(1.1);
+  }
+
+  .PGOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .PGItem:hover .PGOverlay {
+    opacity: 1;
+  }
+
+  .PGCaption {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
