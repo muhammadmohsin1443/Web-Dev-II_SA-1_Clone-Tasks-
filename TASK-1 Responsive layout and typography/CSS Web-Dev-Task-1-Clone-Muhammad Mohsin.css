@@ -248,7 +248,7 @@ footer {
     }
     /*  Styling for the main content section */
     #main-content {
-        max-width: 100%;    /*  Setting maximum width to 100% of parent element, it alllows for responsive scaling while preventing too-wide layouts*/
+        max-width: 80%;   /*  Setting maximum width to 80% of parent element, it alllows for responsive scaling while preventing too-wide layouts*/
         margin-top: 30px;   /*  Adding top margin for spacing */
         border:  2px solid #000;    /*  Adding border for spacing */
     }
