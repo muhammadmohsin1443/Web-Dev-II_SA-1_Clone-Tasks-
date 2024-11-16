@@ -284,7 +284,6 @@ img {
     height: 400px;  /*  Setting height to 400px */
   }
   
-  
   /*   media quiry for tablet, min-width: 720px and max-width: 1024px,  */
   @media screen and (min-width: 720px) and (max-width: 1024px) {
     /*  Styling for the main content  */
